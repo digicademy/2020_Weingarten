@@ -59,9 +59,7 @@
                 <h5><strong>2020-01-10</strong> Weingarten </h5>
                 <h5>
                     <strong>
-                        <a
-                            href=""
-                            >TUSTEP-Workshop 2020 </a>    
+                        <a href="">TUSTEP-Workshop 2020 </a>
                     </strong>
                 </h5>
                 <h1 class="red down-100">Workshop</h1>
@@ -85,58 +83,88 @@
                             >CC-BY 4.0</a></strong> -->
                 </h5>
             </div>
-            <div class="step" id="content"><h2 class="red">Aufbau</h2><ul class="line-height-one-five">
-                <li><a href="#xml2rtf">XML2RTF</a></li>
-                <li><a href="#git">TUSCRIPT, Git &amp; GitHub</a></li>
-                <li><a href="#ve">#ve &amp; #va in Webumgebungen</a></li>
+            <div class="step" id="content">
+                <h2 class="red">Aufbau</h2>
+                <ul class="line-height-one-five">
+                    <li>
+                        <a href="#git">TUSCRIPT, Git &amp; GitHub</a>
+                    </li>
+                    <!--<li>
+                        <a href="#xml2rtf">XML2RTF</a>
+                    </li>-->
+                    
+
+                    <!--<li><a href="#ve">#ve &amp; #va in Webumgebungen</a></li>-->
                 </ul>
-                
+
             </div>
-           
-            <div class="step" id="xml2rtf">
-                <h2 class="red">01</h2>
-                <h3>XML2RTF</h3>
-                <p class="centered x-small"><a href="#content">Aufbau</a></p>
-            </div>
-            <div class="step" id="ve">
-                <h2 class="red">03</h2>
-                <h3>#ve &amp; #va in Webumgebungen</h3>
-                <p class="centered x-small"><a href="#content">Aufbau</a></p>
-            </div>
+
+            
             <div class="step" id="git">
-                <h2 class="red">02</h2>
+                <h2 class="red">01</h2>
                 <h3>TUSCRIPT, Git &amp; GitHub</h3>
-                <p class="centered x-small"><a href="#content">Aufbau</a></p>
+                <p class="centered x-small">
+                    <a href="#content">Aufbau</a>
+                </p>
             </div>
             <div class="step">
-                
+
                 <dl>
                     <dt class="red">Git</dt>
                     <dd>Software zur Versionsverwaltung</dd>
-                    <dd><blockquote class="down-25">Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.</blockquote><p class="right x-small"><a href="https://git-scm.com">Getting started with Git and GitHub</a>: the complete beginner's guide</p></dd>
-                    <dt class="red">GitHub</dt>                  
+                    <dd>
+                        <blockquote class="down-25">Git is a free and open source distributed
+                            version control system designed to handle everything from small to very
+                            large projects with speed and efficiency.</blockquote>
+                        <p class="right x-small"><a href="https://git-scm.com">Getting started with
+                                Git and GitHub</a>: the complete beginner's guide</p>
+                    </dd>
+                    <dt class="red">GitHub</dt>
                     <dd>Webinterface</dd>
-                    <dd><blockquote class="down-25">GitHub is a global company that provides hosting for software development version control using Git. […] It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features. It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.</blockquote>
-                        <p class="x-small right"><a href="https://en.wikipedia.org/wiki/GitHub">GitHub
-                            From Wikipedia, the free encyclopedia</a></p></dd>
+                    <dd>
+                        <blockquote class="down-25">GitHub is a global company that provides hosting
+                            for software development version control using Git. […] It offers all of
+                            the distributed version control and source code management (SCM)
+                            functionality of Git as well as adding its own features. It provides
+                            access control and several collaboration features such as bug tracking,
+                            feature requests, task management, and wikis for every
+                            project.</blockquote>
+                        <p class="x-small right">
+                            <a href="https://en.wikipedia.org/wiki/GitHub">GitHub From Wikipedia,
+                                the free encyclopedia</a>
+                        </p>
+                    </dd>
                 </dl>
             </div>
-            
+
             <div class="step">
                 <h2 class="red">TUSTEP Beispielprojekt </h2>
                 <ul class="line-height-one-five">
-                    <li>Das Skript <code>gt_lt</code> transformiert XML-Codes (Tags, entities) in die entsprechende Character Data Zeichendaten: <br/><code>&lt;tag&gt;</code> (XML) wird <code>&amp;lt;tag&amp;gt;</code> (CDATA)</li>
-                    <li>Das Skript <code>gt_lt</code> wird als Segment der Datei <a href="resources/data/sample.ini"><code>sample.ini</code></a> in einem beliebigen Skripteditor in <code>ISO-8859-1</code> geschrieben: <code>#=: gt_lt</code></li>
-                    <li>Git zeigt die Versionsgeschichte binärer Dateien nicht an, also kein <code>git diff</code> für TUSTEP-Dateien im TUSTEP-Datei-Format.</li>
-                    <li>Da <code>sample.ini</code> keine TUSTEP-Datei ist und als INI-Datei eines TUSTEP-Projekts dienen soll, muss der Name dieser Datei mit der TUSTEP-Systemvariablen TUSTEP_INI vorgegeben werden.</li>
+                    <li>Das Skript <code>gt_lt</code> transformiert XML-Codes (Tags, entities) in
+                        die entsprechende Character Data Zeichendaten:
+                            <br /><code>&lt;tag&gt;</code> (XML) wird
+                            <code>&amp;lt;tag&amp;gt;</code> (CDATA)</li>
+                    <li>Das Skript <code>gt_lt</code> wird als Segment der Datei <a
+                            href="resources/data/sample.ini"><code>sample.ini</code></a> in einem
+                        beliebigen Skripteditor in <code>ISO-8859-1</code> geschrieben: <code>#=:
+                            gt_lt</code></li>
+                    <li>Git zeigt die Versionsgeschichte binärer Dateien nicht an, also kein
+                            <code>git diff</code> für TUSTEP-Dateien im TUSTEP-Datei-Format.</li>
+                    <li>Da <code>sample.ini</code> keine TUSTEP-Datei ist und als INI-Datei eines
+                        TUSTEP-Projekts dienen soll, muss der Name dieser Datei mit der
+                        TUSTEP-Systemvariablen TUSTEP_INI vorgegeben werden.</li>
                 </ul>
-                
+
             </div>
             <div class="step">
                 <h2 class="red">Systemvariable <code>TUSTEP_INI</code></h2>
-                <blockquote>
-                    Die INI-Datei ist eine TUSTEP-Datei mit dem vorgegebenen Namen TUSTEP.INI. Soll als INI-Datei eine ASCII-Datei oder eine Datei mit einem anderen Namen verwendet werden, so muss der Name dieser Datei mit der System-Variablen TUSTEP_INI vorgegeben werden; andernfalls sollte diese System-Variable nicht definiert werden. Falls die INI-Datei eine ASCII-Datei ist, kann sie in <span class="highlight">ASCII oder ISO-8859-1</span> codiert sein.
-                </blockquote>
+                <blockquote> Die INI-Datei ist eine TUSTEP-Datei mit dem vorgegebenen Namen
+                    TUSTEP.INI. Soll als INI-Datei eine ASCII-Datei oder eine Datei mit einem
+                    anderen Namen verwendet werden, so muss der Name dieser Datei mit der
+                    System-Variablen TUSTEP_INI vorgegeben werden; andernfalls sollte diese
+                    System-Variable nicht definiert werden. Falls die INI-Datei eine ASCII-Datei
+                    ist, kann sie in <span class="highlight">ASCII oder ISO-8859-1</span> codiert
+                    sein. </blockquote>
                 <p class="x-small right">Handbuch, 75</p>
             </div>
             <div class="step">
@@ -153,25 +181,70 @@
             <div class="step">
                 <h2 class="red">Git Aktionen</h2>
                 <table>
-                    <tr><th>Kommando</th><th>Definition</th></tr>
-                    <tr><td><code>git init</code></td><td>initialisiere ein lokales Softwareprojekt</td></tr>
-                    <tr><td><code>git status</code></td><td>liste geänderte Dateien auf</td></tr>
-                    <tr><td><code>git add .</code></td><td>indiziere Arbeitsstand für Versionierung</td></tr>
-                    <tr><td><code>git commit -m "message"</code></td><td>übernimm Arbeitsstand in Versionshistorie</td></tr>
-                    <tr><td><code>git push</code></td><td>pushe lokale commits auf GitHub</td></tr>
-                    
-                    
-                    <tr><td><code>git clone http://&lt;url&gt;</code></td><td>klone Projekt und Versionshistorie</td></tr>
-                    <tr><td><code>git diff</code></td><td>zeige Unterschiede zwischen branch und master</td></tr>
-                    
-                </table><p class="right x-small"><code>man git</code></p>
+                    <tr>
+                        <th>Kommando</th>
+                        <th>Definition</th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git init</code>
+                        </td>
+                        <td>initialisiere ein lokales Softwareprojekt</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git status</code>
+                        </td>
+                        <td>liste geänderte Dateien auf</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git add .</code>
+                        </td>
+                        <td>indiziere Arbeitsstand für Versionierung</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git commit -m "message"</code>
+                        </td>
+                        <td>übernimm Arbeitsstand in Versionshistorie</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git push</code>
+                        </td>
+                        <td>pushe lokale commits auf GitHub</td>
+                    </tr>
+
+
+                    <tr>
+                        <td>
+                            <code>git clone http://&lt;url&gt;</code>
+                        </td>
+                        <td>klone Projekt und Versionshistorie</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <code>git diff</code>
+                        </td>
+                        <td>zeige Unterschiede zwischen branch und master</td>
+                    </tr>
+
+                </table>
+                <p class="right x-small">
+                    <code>man git</code>
+                </p>
             </div>
             <div class="step">
                 <h2 class="red">Repositorium auf GitHub</h2>
-                <ul class="line-height-one-five"><li>anlegen eines Repositoriums auf Github.</li>
-                    <li>pushen eines existierenden Repositoriums von der Kommandozeile.</li><li> vorbereiten dieses Repositiorium für die Versionierung mit <code>git init</code>.</li></ul>
+                <ul class="line-height-one-five">
+                    <li>anlegen eines Repositoriums auf Github.</li>
+                    <li>pushen eines existierenden Repositoriums von der Kommandozeile.</li>
+                    <li> vorbereiten dieses Repositiorium für die Versionierung mit <code>git
+                            init</code>.</li>
+                </ul>
             </div>
-        
+
             <div class="step">
                 <div class="row">
                     <div class="twalve columns">
@@ -184,28 +257,30 @@
                     </div>
                 </div>
             </div>
-                <div class="step">
-                    
-                            <h2 class="red">Push an existing Repository</h2>
-                            <blockquote>
-                                <code>git remote add origin https://github.com/&lt;yourname&gt;/&lt;yourgitrep&gt;.git</code><br/>
-                                <code>git push -u origin master</code>
-                            </blockquote>
-                       
+            <div class="step">
+
+                <h2 class="red">Push an existing Repository</h2>
+                <blockquote>
+                    <code>git remote add origin
+                        https://github.com/&lt;yourname&gt;/&lt;yourgitrep&gt;.git</code>
+                    <br />
+                    <code>git push -u origin master</code>
+                </blockquote>
+
             </div>
-            
-                <div class="step">
-                    <div class="row">
-                        <div class="twalve columns">
-                            <h2 class="red">First Commit</h2>
-                            <figure class="mfp-lightbox even-left">
-                                <a href="resources/img/github_rep_1.png">
-                                    <img src="resources/img/github_rep_1.png" alt="nix" />
-                                </a>
-                            </figure>
-                        </div>
+
+            <div class="step">
+                <div class="row">
+                    <div class="twalve columns">
+                        <h2 class="red">First Commit</h2>
+                        <figure class="mfp-lightbox even-left">
+                            <a href="resources/img/github_rep_1.png">
+                                <img src="resources/img/github_rep_1.png" alt="nix" />
+                            </a>
+                        </figure>
                     </div>
-                </div> 
+                </div>
+            </div>
             <div class="step">
                 <div class="row">
                     <div class="twalve columns">
@@ -217,7 +292,7 @@
                         </figure>
                     </div>
                 </div>
-            </div> 
+            </div>
             <div class="step">
                 <div class="row">
                     <div class="twalve columns">
@@ -229,30 +304,104 @@
                         </figure>
                     </div>
                 </div>
-            </div> 
-            <div class="step">
-                <h2 class="red">Clone</h2> 
-                <blockquote><code>git clone https://…</code><br/><code>git pull </code></blockquote>
             </div>
-            
-           <div class="step">
-               <h2 class="red">Literatur</h2>
-               <ul>
-                   <li><a href="https://github.github.com/training-kit/downloads/de/github-git-cheat-sheet/">github-cheat-sheet</a></li>
-                   <li>Moritz Stückler, <a href="https://t3n.de/news/eigentlich-github-472886/">Was ist eigentlich Github?</a>, t3n 2016</li>
-                   <li>HoangVM, medium.com 2019-03-19
-                      <a href="https://medium.com/@buzaa/why-you-should-not-push-binary-files-to-git-and-what-to-do-if-you-do-29f34692cef0">Why you should not push binary files to git? And what to do if you do ?</a></li>
-               </ul>
-           </div>
+            <div class="step">
+                <h2 class="red">Clone</h2>
+                <blockquote>
+                    <code>git clone https://…</code>
+                    <br />
+                    <code>git pull </code>
+                </blockquote>
+            </div>
+
+            <div class="step">
+                <h2 class="red">Literatur</h2>
+                <ul>
+                    <li>GIT-<a href="https://digitale-methodik.adwmainz.net/mod5/5c/slides/basisinstrumente/#/step-26">Downloads</a>, <a href="https://git-scm.com/download/win">Win</a></li>
+                    <li>
+                        <a
+                            href="https://github.github.com/training-kit/downloads/de/github-git-cheat-sheet/"
+                            >github-cheat-sheet</a>
+                    </li>
+                    <li>Anna Neovesky, Jörg Hambuch (Digitale Akademie), <a href="https://digitale-methodik.adwmainz.net/mod5/5c/slides/basisinstrumente/#/step-26">GIT</a> Erste Schritte mit dem Versionskontrollsystem, Mainz International Summer School 2019 – Digitale Methodik in den Geistes- und Kulturwissenschaften</li>
+                    <li>Moritz Stückler, <a href="https://t3n.de/news/eigentlich-github-472886/">Was
+                            ist eigentlich Github?</a>, t3n 2016</li>
+                    <li>HoangVM, medium.com 2019-03-19 <a
+                            href="https://medium.com/@buzaa/why-you-should-not-push-binary-files-to-git-and-what-to-do-if-you-do-29f34692cef0"
+                            >Why you should not push binary files to git? And what to do if you do
+                            ?</a></li>
+                </ul>
+            </div>
+            <!-- 
+                <div class="step" id="xml2rtf">
+                <h2 class="red">02</h2>
+                <h3>XML2RTF</h3>
+                <p class="centered x-small">
+                    <a href="#content">Aufbau</a>
+                </p>
+            </div>
+            <div class="step">
+                <h2 class="red">#*export in Webumgebung</h2>
+                <blockquote><code>RTF</code> ist nicht geeignet als programmunabhängiges und
+                    systemübergreifendes Austausch- und Archivformat. Zu diesem Zweck sind Formate
+                    wie <code>JSON-LD</code> und Auszeichnungssprachen wie <code>TEI XML</code> weit
+                    besser geeignet.<br />Das <code>Rich Text Format</code> empfiehlt sich jedoch
+                    dann, wenn Forschungsdaten direkt in gängige Textverarbeitungsprogramme zu
+                    integrieren sind. Das <code>TUSTEP</code> Modul <code>#*export</code> setzt
+                    wohlgeformtes <code>XML</code> voraus, es spricht also nichts dagegen als
+                    Grundlage für einen RTF-Export auf das weitverbreitete TEI-XML
+                    zurückzugreifen.</blockquote>
+            </div>
+            <div class="step">
+                <h2 class="red">Workflow</h2>
+                <table>
+                    <tr>
+                        <th>TEI XML</th>
+                        <th>#*export</th>
+                        <th>RTF</th>
+                    </tr>
+                    <tr>
+                        <td>REQUEST (xml)</td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3" class="centered">[ggbf. Transformationsskript]</td>
+                    </tr>
+                    <tr>
+                        <td>TEI2TF</td>
+                        <td>Definitionen</td>
+                        <td>tf2RTF</td>
+                    </tr>
+                    <tr>
+                        <td>tf löschen</td>
+                        <td></td>
+                        <td>rtf löschen</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="step">
+                <h2 class="red">Beispiel</h2>
+                <p><a href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=de&release=beta"
+                            ><code>epidat</code></a> Forschungsplattform jüdische
+                    Grabsteinepigraphik</p>
+
+            </div>
+            -->
+            <!-- <div class="step" id="ve">
+                <h2 class="red">03</h2>
+                <h3>#ve &amp; #va in Webumgebungen</h3>
+                <p class="centered x-small"><a href="#content">Aufbau</a></p>
+            </div>-->
             <div class="step">
                 <div class="centered">
                     <h1 class="red">F I N I S</h1>
                     <h2>סוף דבר הכל נשמע</h2>
                 </div>
 
-           
-        </div>
+
             </div>
+        </div>
         <!-- jquery -->
         <script src="vendor/jquery/jquery-1.11.0.min.js"></script>
         <!-- unite gallery -->
