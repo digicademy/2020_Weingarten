@@ -101,6 +101,17 @@
                     <a href="#content">Aufbau</a>
                 </p>
             </div>
+            <div class="step"><dl>                <dt class="red">#*vemo</dt>
+                <dd><blockquote>
+                    Das Makro *VEMO vergleicht edierte Daten mit den Originaldaten.
+                    Es erwartet, dass die Daten in der zur Spezifikation DATEI ange-
+                    gebenen Datei mit dem Editor oder mit dem Kommando #HOLE aus einer
+                    anderen Datei "geholt" wurden. Die geholten Daten können entweder
+                    eine gesamte Datei oder nur ein Segment einer Datei umfassen.
+                    Das Makro vergleicht die Daten in der angegebenen Datei mit den
+                    entsprechenden Daten in der Datei, aus der sie geholt wurden.</blockquote></dd></dl>
+
+            </div>
             <div class="step">
                 <dl>
                     <dt class="red">Git</dt>
@@ -296,7 +307,10 @@
             <div class="step">
                 <h2 class="red">Clone</h2>
                 <blockquote>
-                    <code>git clone https://…</code>
+                    <pre><code>cd ~/Downloads/
+mkdir github
+cd github
+git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
                     <br />
                     <code>git pull </code>
                 </blockquote>
