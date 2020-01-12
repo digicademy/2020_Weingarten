@@ -107,7 +107,7 @@
                     <dt class="red">#*vemo</dt>
                     <dd>
                         <blockquote> Das Makro *VEMO vergleicht edierte Daten mit den Originaldaten.
-                            Es erwartet, dass die Daten in der zur Spezifikation DATEI ange- gebenen
+                            Es erwartet, dass die Daten in der zur Spezifikation DATEI angegebenen
                             Datei mit dem Editor oder mit dem Kommando #HOLE aus einer anderen Datei
                             "geholt" wurden. Die geholten Daten können entweder eine gesamte Datei
                             oder nur ein Segment einer Datei umfassen. Das Makro vergleicht die
@@ -124,6 +124,7 @@
                 <dl>
                     <dt class="red">Git</dt>
                     <dd>Software zur Versionsverwaltung</dd>
+                    <dd><q><strong>G</strong>lobal <strong>I</strong>nformation <strong>T</strong>racker</q>
                     <dd>
                         <blockquote class="down-25">Git is a free and open source distributed
                             version control system designed to handle everything from small to very
@@ -226,14 +227,16 @@
                         <td>
                             <code>git push</code>
                         </td>
-                        <td>pushe lokale commits auf GitHub</td>
+                        <td>pushe (rette) lokale commits auf das GitHub-Repositorium</td>
                     </tr>
+                    <tr><td><code> git pull</code></td><td>pulle (hole) aktuellste Version aus dem GitHub- Repositorium</td></tr>
                     <tr>
                         <td>
                             <code>git clone http://&lt;url&gt;</code>
                         </td>
                         <td>klone Projekt und Versionshistorie</td>
                     </tr>
+                    
                     <tr>
                         <td>
                             <code>git diff</code>
@@ -249,9 +252,13 @@
                 <h2 class="red">Repositorium auf GitHub</h2>
                 <ul class="line-height-one-five">
                     <li>anlegen eines <a href="https://github.com/KollatzThomas/tustep_sample">Repositorium</a>s auf Github.</li>
-                    <li>pushen eines existierenden Repositoriums von der Kommandozeile.</li>
-                    <li> vorbereiten dieses Repositiorium für die Versionierung mit <code>git
-                            init</code>.</li>
+                    <li>Beispielrepositorium: <a href="https://github.com/KollatzThomas/tustep_sample"><pre><code>https://github.com/KollatzThomas/tustep_sample</code></pre></a></li>
+                    
+                    <li> vorbereiten eines existierenden Repositioriums für die Versionierung mit <code>git
+                            init</code>:</li>
+                    <li><pre><code>git init
+git add .
+git commit -m "first commit"</code></pre></li>
                 </ul>
             </div>
 
@@ -270,12 +277,10 @@
             </div>
             <div class="step">
                 <h2 class="red">Push an existing Repository</h2>
-                <blockquote>
-                    <code>git remote add origin
-                        https://github.com/&lt;yourname&gt;/&lt;yourgitrep&gt;.git</code>
-                    <br />
-                    <code>git push -u origin master</code>
-                </blockquote>
+                <pre>
+                    <code>git remote add origin https://github.com/&lt;yourname&gt;/&lt;yourgitrep&gt;.git
+git push -u origin master</code>
+                </pre>
             </div>
             <div class="step">
                 <div class="row">
@@ -331,23 +336,21 @@
             </div>
             <div class="step">
                 <h2 class="red">Clone</h2>
-                <blockquote>
+                
                     <pre><code>cd ~/Downloads/
 mkdir github
 cd github
 git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
-                    <br />
-                    <code>git pull </code>
-                </blockquote>
+                
             </div>
             <div class="step">
 
                 <dl class="line-height-one-five">
-                    <dt class="red">Desiderata</dt>
+                    <!--<dt class="red">Desiderata</dt>
                     <dd><code>INCLUDE/DATA "file"</code> auch für <q>Fremddateien</q>?</dd>
                     <dd><strong>alternativ</strong>: Export der Segmente einer Makrodatei in
-                        Einzeldateien bzw. Import von Fremddateien in eine TUSTEP Ini-Datei.</dd>
-                    <dt class="red down-50">Potential und Anwendungsszenarien</dt>
+                        Einzeldateien bzw. Import von Fremddateien in eine TUSTEP Ini-Datei.</dd>-->
+                    <dt class="red down-50 line-height-one-five">Potential und Anwendungsszenarien</dt>
                     <dd>Kollaborative TUSTEP Musterskripte auf GitHub vorhalten,</dd>
                     <dd>Komplexere TUSTEP-Projekte versionieren.</dd>
                 </dl>
@@ -470,6 +473,43 @@ git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
 &lt;alias alias="label" tag=b/&gt;
 &lt;alias alias=supplied tag=dummy/&gt;</code></pre>
                 </blockquote>
+            </div>
+            <div class="step">
+                <h2>Content-Type: application/RTF</h2>
+                <blockquote>
+                    Die Verwendung der System-Variablen TUSTEP_CGI ist nur sinnvoll, wenn TUSTEP über WWW durch einen WWW-Server im Batch-Modus aufgerufen wird. Mit ihr wird der Name des Segments in der INI-Datei  festgelegt, dessen Inhalt als CGI-Makro ausgeführt werden soll. Hinter dem Segmentnamen muss zusätzlich der Code angegeben werden, in dem die vom CGI-Makro erzeugte Standard-Ausgabe codiert werden soll. Als Codes sind ISO-8859-1 und UTF-8 vorgesehen. Segmentname und Code-Angabe müssen durch einen Schrägstrich getrennt werden.
+                    <span class="red">In Sonderfällen können hinter der Code-Angabe zwei Schrägstriche folgen. In die- sem Fall wird die unbedingt notwendige Content-type-Information nicht automatisch von TUSTEP ausgegeben, sondern muss vom CGI-Makro ausgegeben werden.
+                    </span>                    
+                </blockquote>
+                <p class="right x-small">Handbuch, 75</p>
+            </div>
+            <div class="step">
+                <h2 class="red">RTF-Download</h2>
+                <blockquote><pre><code>ERROR/STOP OPEN ("epidat.sty",READ,-std-)
+EXECUTE/QUIET #*export,{tf},{rtf},de=epidat.sty,lo=+
+<span class="red">ERROR/STOP DELETE (tf)</span>
+length=BYTES (rtf)
+MODE DATA
+Content-Type: application/rtf; Charset=UTF-8
+Content-Disposition: attachment; filename="{rtf}"
+Content-Length: {length}
+
+$$ INCLUDE/BINARY/FILE $rtf
+$$ <span class="red">ERROR/STOP DELETE (rtf)</span></code></pre><code>INCLUDE/BINARY/FILE $rtf</code> Die in der angegebenen Datei enthaltenen Daten werden binär, d.h. unverändert in die Standard-Ausgabe eingefügt.
+                [Diese Anweisung ist nur in einem CGI-Makro erlaubt.]</blockquote><p class="right x-small">Handbuch, 448</p>
+            </div>
+            <div class="step">
+                
+                <dl class="line-height-one-five">
+                    <dt class="red">Fazit</dt>
+                    <dd><code>#*export</code> kann in <em>jeden</em> XML-Workflow integriert werden.</dd>
+                    <dd><code>#*export</code> setzt wohlgeformtes XML voraus und zwar sowohl bei der <q>Quelldatei</q>, als auch bei der <q>Definitionsdatei</q>, die Definitionen der Tags enthält.</dd>
+                    <dd><code>#*export</code> ermöglicht es kontrolliert eine Textdatei auf Grundlage strukturierter Daten zu erstellen.</dd>
+                    <dt class="red">Desiderat</dt>
+                    <dd><code>#*export</code> als Webservice</dd>
+                    <dd><code>#*export</code> öffnen für <code>XML</code>-Dateien als Quell-Datei und Definitionen-Datei</dd>
+                    
+                </dl>
             </div>
             <div class="step">
                 <h2 class="red">Präsentationen zu #*export</h2>
