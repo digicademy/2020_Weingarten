@@ -61,8 +61,9 @@
                         <a href="http://www.tustep.uni-tuebingen.de/down/wein20/programm_w20.pdf" target="_blank">TUSTEP-Workshop 2020 </a>
                     </strong>
                 </h5>
-                <h1 class="red down-100">Workshop</h1>
-                <h2 class="down-25">Weingarten 2020</h2>
+                <!-- <h1 class="red down-100">Workshop</h1> -->
+                <h2 class="down-100 red">TUSCRIPT, Git &amp; GitHub</h2>
+                <h2 class="down-25 red">XML2RTF</h1>
                 <h5 class="down-100"> online <a href="https://digicademy.github.io/2020_Weingarten"
                         title="View the presentation online" target="_blank">
                         https://digicademy.github.io/2020_Weingarten</a>
@@ -236,7 +237,7 @@
                         </td>
                         <td>klone Projekt und Versionshistorie</td>
                     </tr>
-                    
+
                     <tr>
                         <td>
                             <code>git diff</code>
@@ -253,7 +254,7 @@
                 <ul class="line-height-one-five">
                     <li>anlegen eines <a href="https://github.com/KollatzThomas/tustep_sample" target="_blank">Repositorium</a>s auf Github.</li>
                     <li>Beispielrepositorium: <a href="https://github.com/KollatzThomas/tustep_sample" target="_blank"><pre><code>https://github.com/KollatzThomas/tustep_sample</code></pre></a></li>
-                    
+
                     <li> vorbereiten eines existierenden Repositioriums für die Versionierung mit <code>git
                             init</code>:</li>
                     <li><pre><code>git init
@@ -336,12 +337,12 @@ git push -u origin master</code>
             </div>
             <div class="step">
                 <h2 class="red">Clone</h2>
-                
+
                     <pre><code>cd ~/Downloads/
 mkdir github
 cd github
 git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
-                
+
             </div>
             <div class="step">
 
@@ -416,18 +417,18 @@ git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
                 <h2 class="red">TEI und DOCX/RTF</h2>
                 <blockquote><code>Subject: Aw: AW: transform tei to docx in oxygen</code><br/><br/>
                     Dear all,<br/><br/>
-                    
+
                     maybe the TUSTEP tool would work work here, too? It allows, e.g., the transformation of a RTF into XML and other formats. The tool needs a bit of training, I must admit.<br/><br/>
-                    
+
                     Best, Christian
-                </blockquote>         
+                </blockquote>
                 <p class="right x-small">Christian M. Prager, <a href="https://listserv.brown.edu/cgi-bin/wa?A2=ind1905&amp;L=TEI-L&amp;P=16891" target="_blank">transform tei to docx</a>, 2019-05-17</p>
             </div>
             <div class="step">
                 <h2 class="red">Beispiel</h2>
                 <p><a href="http://www.steinheim-institut.de/cgi-bin/epidat?lang=de&amp;release=beta" target="_blank"
                     ><code>epidat</code></a> Forschungsplattform jüdische
-                    Grabsteinepigraphik</p>               
+                    Grabsteinepigraphik</p>
             </div>
             <div class="step">
                 <h2 class="red">Workflow</h2>
@@ -456,7 +457,7 @@ git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
                         <td>rtf löschen</td>
                     </tr>
                 </table>
-            </div>          
+            </div>
             <div class="step">
                 <h2 class="red">epidat.sty</h2>
                 <blockquote>
@@ -490,7 +491,7 @@ git clone https://github.com/KollatzThomas/tustep_sample</code></pre>
                 <blockquote>
                     Die Verwendung der System-Variablen TUSTEP_CGI ist nur sinnvoll, wenn TUSTEP über WWW durch einen WWW-Server im Batch-Modus aufgerufen wird. Mit ihr wird der Name des Segments in der INI-Datei  festgelegt, dessen Inhalt als CGI-Makro ausgeführt werden soll. Hinter dem Segmentnamen muss zusätzlich der Code angegeben werden, in dem die vom CGI-Makro erzeugte Standard-Ausgabe codiert werden soll. Als Codes sind ISO-8859-1 und UTF-8 vorgesehen. Segmentname und Code-Angabe müssen durch einen Schrägstrich getrennt werden.<br/>
                     <span class="red">In Sonderfällen können hinter der Code-Angabe zwei Schrägstriche folgen. In diesem Fall wird die unbedingt notwendige Content-type-Information nicht automatisch von TUSTEP ausgegeben, sondern muss vom CGI-Makro ausgegeben werden.
-                    </span>                    
+                    </span>
                 </blockquote>
                 <p class="right x-small">Handbuch, 75</p>
             </div>
@@ -510,7 +511,7 @@ $$ <span class="red">ERROR/STOP DELETE (rtf)</span></code></pre><code>INCLUDE/BI
                 [Diese Anweisung ist nur in einem CGI-Makro erlaubt.]</blockquote><p class="right x-small">Handbuch, 448</p>
             </div>
             <div class="step">
-                
+
                 <dl class="line-height-one-five">
                     <dt class="red">Fazit</dt>
                     <dd><code>#*export</code> kann in <em>jeden</em> XML-Workflow integriert werden.</dd>
@@ -519,10 +520,10 @@ $$ <span class="red">ERROR/STOP DELETE (rtf)</span></code></pre><code>INCLUDE/BI
                     <dt class="red">Desiderat</dt>
                     <dd><code>#*export</code> als Webservice</dd>
                     <dd><code>#*export</code> öffnen für <code>XML</code>-Dateien als Quell-Datei und Definitionen-Datei</dd>
-                    
+
                 </dl>
             </div>
-            
+
 
             <!-- <div class="step" id="ve">
                 <h2 class="red">03</h2>
@@ -534,7 +535,7 @@ $$ <span class="red">ERROR/STOP DELETE (rtf)</span></code></pre><code>INCLUDE/BI
                     <h1 class="red">F I N I S</h1>
                     <h2>סוף דבר הכל נשמע</h2><p class="x-small centered">Kohelet 12:13</p>
                         <p class="x-small right"><a href="#content">Aufbau</a></p>
-                    
+
                 </div>
 
 
