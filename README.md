@@ -10,5 +10,5 @@ Digitale Akademie@Akademy of Sciences and Literature | Mainz
 
 online: 
 
-[https://github.com/digicademy/2020_Weingarten](https://github.com/digicademy/2020_Weingarten)
+[https://digicademy.github.io/2020_Weingarten](https://digicademy.github.io/2020_Weingarten)
 
